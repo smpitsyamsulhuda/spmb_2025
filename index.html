@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PPDB 2025 - SMP IT Syamsul Huda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <img src="logo.png.png" alt="Logo SMP IT Syamsul Huda">
+  <h1>PPDB 2025</h1>
+  <p>SMP IT Syamsul Huda</p>
+</header>
+
+<nav>
+  <a href="#profil">Profil</a>
+  <a href="#program">Program</a>
+  <a href="#jadwal">Jadwal</a>
+  <a href="#syarat">Syarat</a>
+  <a href="#daftar">Daftar</a>
+  <a href="#kontak">Kontak</a>
+  <button id="dark-mode-toggle">🌙</button>
+</nav>
+
+<section class="hero" data-aos="fade-up">
+  <h1>Penerimaan Peserta Didik Baru</h1>
+  <p>Tahun Ajaran 2025/2026</p>
+  <div class="cta">
+    <a href="#daftar">Daftar Sekarang</a>
+  </div>
+</section>
+
+<section id="profil" data-aos="fade-up">
+  <h2>Profil Sekolah</h2>
+  <p><strong>Visi:</strong> Terwujudnya sekolah unggul, mandiri, religius, dan berakhlakul karimah.</p>
+  <ol>
+    <li>Pembelajaran berbasis teknologi dan bahasa asing</li>
+    <li>Meningkatkan kedisiplinan dan akhlak mulia</li>
+    <li>Pengembangan karakter mandiri dan bertanggung jawab</li>
+    <li>Lingkungan sekolah bersih dan nyaman</li>
+  </ol>
+</section>
+
+<section id="program" data-aos="fade-up">
+  <h2>Program Unggulan</h2>
+  <ul>
+    <li>Tahfidz Qur'an minimal 3 Juz</li>
+    <li>Pembinaan Akhlak Islami</li>
+    <li>Kurikulum Nasional dan Islam Terpadu</li>
+    <li>Pembelajaran Bahasa Arab dan Inggris</li>
+    <li>Pelatihan Kepemimpinan dan Life Skills</li>
+  </ul>
+</section>
+
+<section id="jadwal" data-aos="fade-up">
+  <h2>Jadwal PPDB</h2>
+  <ul>
+    <li>Pendaftaran: 1 Januari - 31 Maret 2025</li>
+    <li>Seleksi: 5 April 2025</li>
+    <li>Pengumuman: 10 April 2025</li>
+  </ul>
+</section>
+
+<section id="syarat" data-aos="fade-up">
+  <h2>Persyaratan</h2>
+  <ul>
+    <li>Fotocopy Akta Kelahiran</li>
+    <li>Fotocopy Kartu Keluarga</li>
+    <li>Fotocopy Ijazah SD</li>
+    <li>Pas Foto 3x4 (3 lembar)</li>
+    <li>Fotocopy KTP Orang Tua</li>
+  </ul>
+</section>
+<section id="daftar" data-aos="fade-up">
+  <h2>Formulir Pendaftaran</h2>
+  <form action="https://formspree.io/f/myzwzljy" method="POST" enctype="multipart/form-data">
+    <label>Nama Lengkap</label>
+    <input type="text" name="nama_lengkap" required>
+
+    <label>Jenis Kelamin</label>
+    <select name="jenis_kelamin" required>
+      <option value="">-- Pilih --</option>
+      <option value="Laki-laki">Laki-laki</option>
+      <option value="Perempuan">Perempuan</option>
+    </select>
+
+    <label>Tempat, Tanggal Lahir</label>
+    <input type="text" name="ttl" required>
+
+    <label>Asal Sekolah</label>
+    <input type="text" name="asal_sekolah" required>
+
+    <label>Alamat</label>
+    <textarea name="alamat" rows="3" required></textarea>
+
+    <label>Nomor HP/WA</label>
+    <input type="tel" name="hp_siswa" required>
+
+    <button type="submit">Kirim Formulir</button>
+  </form>
+
+<section id="kontak" data-aos="fade-up">
+  <h2>Kontak Kami</h2>
+  <p>Alamat: Jl. Gunteng Rt/02 Rw/08, Kec. Karangtengah, Kab. Cianjur 43281</p>
+  <p>Telepon: 0895-0729-0509 (R. Mudan R.K)</p>
+  <p>Email: @syamsulhuda.sch.id</p>
+  <div class="cta">
+    <a href="https://wa.me/089507290509" target="_blank">Hubungi via WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 SMP IT Syamsul Huda. All rights reserved.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  const toggle = document.getElementById('dark-mode-toggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+      toggle.textContent = '☀️';
+    } else {
+      toggle.textContent = '🌙';
+    }
+  });
+</script>
+
+</body>
+</html>

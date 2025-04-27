@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a0e9ff, #cbffe8);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: #0096c7;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+  
+  .hero {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    color: white;
+  }
+  
+  section {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #0077b6;
+    margin-bottom: 1rem;
+  }
+  
+  ul, ol {
+    margin-left: 1.2rem;
+  }
+  
+  .cta {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .cta a {
+    background: #0077b6;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .cta a:hover {
+    background: #005f87;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  form input, form textarea, form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 14px;
+  }
+  
+  form button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4fc3f7, #81c784);
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: linear-gradient(135deg, #29b6f6, #66bb6a);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #0077b6;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  .dark-mode {
+    background: #121212;
+    color: #eee;
+  }
+  
+  .dark-mode nav {
+    background: #222;
+  }
+  
+  .dark-mode section {
+    background: #1e1e1e;
+    color: #eee;
+  }
+  
+  .dark-mode footer {
+    background: #222;
+  }
+  
+  .dark-mode .cta a {
+    background: #444;
+  }
+  header img.logo {
+    max-width: 140px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlide 1s ease forwards;
+  }
+  @media (max-width: 600px) {
+    header img.logo {
+      max-width: 100px;
+    }
+  }
+  
